@@ -1,0 +1,270 @@
+:root {
+    /* logo */
+    --logo-first-color: #2196f3;
+    --logo-second-color: #000000;
+    /* header */
+    --header-link-color: #212121;
+    --header-contacts-color: #757575;
+    /* footer */
+    --footer-bg-color: #2f303a;
+    --footer-logo-first-color: #2196f3;
+    --footer-logo-second-color: #ffffff;
+    --footer-location-color: #ffffff;
+    --footer-contacts-color: rgba(255, 255, 255, 0.6);
+    /* banner */
+    --banner-bg-color: #2f303a;
+    --banner-title-color: #ffffff;
+    --btn-text-color: #ffffff;
+    --btn-bg-color: #2196f3;
+    /* staff */
+    --staff-section-bg-color: #f5f4fa;
+    --staff-item-bg-color: #ffffff;
+
+    --staff-position-color: #757575;
+    /* hero */
+
+    --hero-text-color: #757575;
+    /* accent */
+    --accent-color: #2196f3;
+    /* -------------portfolio ----------------------*/
+    /* =====buttons==== */
+    --c-btn-background-color: #f5f4fa;
+    --c-btn-text-color: #212121;
+    --c-btn-accent: #2196f3;
+    --c-btn-text-accent: #ffffff;
+    /* cases */
+    --case-type-color: #757575;
+}
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    background: #ffffff;
+    color: #212121;
+}
+.list {
+    text-decoration: none;
+}
+.marker {
+    list-style-type: none;
+}
+
+/*header*/
+.header-logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: var(--logo-first-color);
+}
+.half-logo {
+    color: var(--logo-second-color);
+}
+.header-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--header-link-color);
+}
+.header-link:hover,
+.header-link:focus,
+.header-mail:hover,
+.header-mail:focus,
+.header-tel:hover,
+.header-tel:focus {
+    color: var(--accent-color);
+}
+
+.header-mail,
+.header-tel {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--header-contacts-color);
+}
+.header-mail:hover {
+    color: var(--accent-color);
+}
+/*banner*/
+
+.banner-section {
+    background: var(--banner-bg-color);
+}
+.banner-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--banner-title-color);
+}
+.btn {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--btn-text-color);
+
+    background: var(--btn-bg-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+}
+/*hero*/
+.hero-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.hero-text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--hero-text-color);
+}
+.service-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+/*staff*/
+.staff-section {
+    background: var(--staff-section-bg-color);
+}
+.staff-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.staff-item {
+    background: var(--staff-item-bg-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+.staff-agent {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.staff-position {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--staff-position-color);
+}
+
+/*footer*/
+.footer {
+    background: var(--footer-bg-color);
+}
+.f-logo {
+    color: var(--footer-logo-second-color);
+}
+.footer-logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--footer-logo-first-color);
+}
+.footer-location {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--footer-location-color);
+}
+.footer-mail,
+.footer-tel {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--footer-contacts-color);
+}
+.footer-location:hover,
+.footer-location:focus,
+.footer-mail:hover,
+.footer-mail:focus,
+.footer-tel:hover,
+.footer-tel:focus {
+    color: var(--accent-color);
+}
+/* portfolio */
+/* buttons */
+.c-btn {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--c-btn-text-color);
+
+    background: var(--c-btn-background-color);
+    border-radius: 4px;
+
+    cursor: pointer;
+}
+.c-btn:hover,
+.c-btn:focus {
+    background: var(--c-btn-accent);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    color: var(--c-btn-text-accent);
+}
+/* projects */
+.case-name {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--case-name-color);
+}
+.case-type {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--case-type-color);
+}
+.case-item {
+    border: 1px solid #eeeeee;
+    box-sizing: border-box;
+}
