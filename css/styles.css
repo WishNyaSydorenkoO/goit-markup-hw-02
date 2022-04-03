@@ -16,13 +16,12 @@
     --banner-title-color: #ffffff;
     --btn-text-color: #ffffff;
     --btn-bg-color: #2196f3;
+    --btn-accent-color: #188ce8;
     /* staff */
     --staff-section-bg-color: #f5f4fa;
     --staff-item-bg-color: #ffffff;
-
     --staff-position-color: #757575;
     /* hero */
-
     --hero-text-color: #757575;
     /* accent */
     --accent-color: #2196f3;
@@ -112,6 +111,10 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--banner-title-color);
+}
+.btn:hover,
+.btn:focus {
+    background: var(--btn-accent-color);
 }
 .btn {
     font-weight: 700;
