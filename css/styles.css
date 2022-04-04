@@ -78,6 +78,9 @@ body {
     letter-spacing: 0.02em;
     color: var(--header-link-color);
 }
+.header-nav .header-link.current {
+    color: var(--accent-color);
+}
 .header-link:hover,
 .header-link:focus,
 .header-mail:hover,
