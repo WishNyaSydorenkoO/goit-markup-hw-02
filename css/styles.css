@@ -14,6 +14,7 @@
     /* banner */
     --banner-bg-color: #2f303a;
     --banner-title-color: #ffffff;
+    --btn-shadow: rgba(0, 0, 0, 0.15);
     --btn-text-color: #ffffff;
     --btn-bg-color: #2196f3;
     --btn-accent-color: #188ce8;
@@ -21,6 +22,12 @@
     --staff-section-bg-color: #f5f4fa;
     --staff-item-bg-color: #ffffff;
     --staff-position-color: #757575;
+    /* shadows */
+    --shadow-btn-1-color: rgba(0, 0, 0, 0.1);
+    --shadow-btn-2-color: rgba(0, 0, 0, 0.08);
+    --staff-shadow-1-color: rgba(0, 0, 0, 0.12);
+    --staff-shadow-2-color: rgba(0, 0, 0, 0.14);
+    --staff-shadow-3-color: rgba(0, 0, 0, 0.2);
     /* hero */
     --hero-text-color: #757575;
     /* accent */
@@ -130,7 +137,7 @@ body {
     color: var(--btn-text-color);
 
     background: var(--btn-bg-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 4px var(--btn-shadow);
     border-radius: 4px;
     cursor: pointer;
 }
@@ -168,8 +175,9 @@ body {
 }
 .staff-item {
     background: var(--staff-item-bg-color);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 3px var(--staff-shadow-1-color),
+        0px 1px 1px var(--staff-shadow-2-color),
+        0px 2px 1px var(--staff-shadow-3-color);
     border-radius: 0px 0px 4px 4px;
 }
 .staff-agent {
@@ -249,8 +257,9 @@ body {
 .c-btn:hover,
 .c-btn:focus {
     background: var(--c-btn-accent);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-        0px 2px 2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 3px 1px var(--shadow-btn-1-color),
+        0px 1px 2px var(--shadow-btn-2-color),
+        0px 2px 2px var(--staff-shadow-1-color);
     border-radius: 4px;
     color: var(--c-btn-text-accent);
 }
